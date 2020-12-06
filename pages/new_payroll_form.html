@@ -27,6 +27,7 @@
       <div class="row-content">
         <label class="label text" for="name">Name</label>
         <input class="input" type="text" id="name" name="name" placeholder="Your name.." required>
+        <error-output class="text-error" for="text"></error-output>
       </div>
       <div class="row-content"> 
         <label class="label text" for="profile">Profile image</label>
@@ -70,13 +71,14 @@
       <div class="row-content">
         <label class="label text" for="salary">Choose your salary: </label>
         <input class="input" type="range" name="salary" id="salary" min="30000" max="50000" step="100" value="40000">
-        <output class="salary—output text" for="salary-output">40000</output>
+        <output class="salary-output text" id="salaryOutput" for="salary">400000</output> 
       </div>
         <!-- UC 5 -->
         <div class="row-content">
           <label class="label text" for="startDate">Start Date </label>
           <div>
             <select id="day" name="Day">
+              <option value="Please select">Please select</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -110,6 +112,7 @@
               <option value="31">31</option>
             </select>
             <select id="month" name="Month">
+              <option value="Please select">Please select</option>
               <option value="Jan">January</option>
               <option value="Feb">Febuary</option>
               <option value="March">March</option>
@@ -124,6 +127,7 @@
               <option value="Dec">December</option>
             </select>
             <select id="year" name="Year">
+              <option value="Please select">Please select</option>
               <option value="2020">2020</option>
               <option valne="2019">2019</option>
               <option value="2018">2018</option>
